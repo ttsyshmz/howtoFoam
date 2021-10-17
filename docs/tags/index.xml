@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on howtoFoam</title>
@@ -5,10 +6,33 @@
     <description>Recent content in Tags on howtoFoam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp</language>
-    <copyright>Copyright © 2021 @author</copyright>
+    <lastBuildDate>Sun, 17 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ttsyshmz.github.io/howtoFoam/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build</title>
+      <link>https://ttsyshmz.github.io/howtoFoam/tags/build/</link>
+      <pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ttsyshmz.github.io/howtoFoam/tags/build/</guid>
+      <description></description>
+    </item>
     
-        <atom:link href="https://ttsyshmz.github.io/howtoFoam/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>M1 Mac</title>
+      <link>https://ttsyshmz.github.io/howtoFoam/tags/m1-mac/</link>
+      <pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ttsyshmz.github.io/howtoFoam/tags/m1-mac/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>OpenFOAM-v2106</title>
+      <link>https://ttsyshmz.github.io/howtoFoam/tags/openfoam-v2106/</link>
+      <pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ttsyshmz.github.io/howtoFoam/tags/openfoam-v2106/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

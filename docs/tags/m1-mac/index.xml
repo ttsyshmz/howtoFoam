@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>howtoFoam</title>
-    <link>https://ttsyshmz.github.io/howtoFoam/</link>
-    <description>Recent content on howtoFoam</description>
+    <title>M1 Mac on howtoFoam</title>
+    <link>https://ttsyshmz.github.io/howtoFoam/tags/m1-mac/</link>
+    <description>Recent content in M1 Mac on howtoFoam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp</language>
-    <lastBuildDate>Sun, 17 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ttsyshmz.github.io/howtoFoam/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ttsyshmz.github.io/howtoFoam/tags/m1-mac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OpenFOAM-v2106をM1 Macでビルドする方法</title>
       <link>https://ttsyshmz.github.io/howtoFoam/post/build-openfoam-v2106-on-m1mac/</link>
@@ -17,15 +17,6 @@
 ファイル 以下のファイルが必要になります。
  OpenFOAM-v2106 ThirdParty-v2106.tgz OpenFOAM-v2106.patch by mrklein feexceptErsatz-v2106 by me  Case-sensitive Macは、デフォルトで大文字小文字を区別しないファイルボリュームが使われているケースがある。OpenFOAMは、大文字小文字を区別する必要があるので、お使いのMacにAPFS (大文字/小文字を区別) ボリュームを作って、そこにOpenFOAMファイルを展開する。
 build方法  全てのファイルをCase-sensitiveのボリュームに保存する。 OpenFOAMv2106.tgzとThirdParty-v2106.tgzを展開する。  $ tar xvzf OpenFOAM-v2106.tgz $ tar xvzf ThirdParty-v2106.tgz OpenFOAM-v2106ディレクトリに移動し、パッチを当てる。  $ cd OpenFOAM-v2106 $ cp ../OpenFOAM-v2106.patch . $ patch -p1 &amp;lt; OpenFOAM-v2106.patch feexceptErsatz.Hを差し替える。  $ mv src/OSspecific/POSIX/signals/feexceptErsatz.H src/OSspecific/POSIX/signals/feexceptErsatz.H_org $ cp ../feexceptErsatz.H src/OSspecific/POSIX/signals/feexceptErsatz.H build  $ . etc/bashrc $ ./Allwmake 最後に OpenFOAM-v2106.patchでは、etc/config.sh/FFTWが適切に書かれない。私の場合は、brewでFFTWをインストールし、それへのパスをこのファイルに追記した。</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://ttsyshmz.github.io/howtoFoam/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ttsyshmz.github.io/howtoFoam/about/</guid>
-      <description>This is a blogs for professional CFD engineers, ttsyshmz, to store his know-how on OpenFOAM, with the goal of explaining its contents using code that can be built and run.</description>
     </item>
     
   </channel>
