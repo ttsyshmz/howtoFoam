@@ -1,4 +1,4 @@
-//    Copyright (C) 2021 ttsyshmz
+// Copyright (C) 2021 ttsyshmz
 
 #include "fvCFD.H"
 #include "interpolation2DTable.H"
